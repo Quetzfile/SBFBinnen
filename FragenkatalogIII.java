@@ -1,6 +1,6 @@
 public class FragenkatalogIII {
 
-    static String[][] fragenUndAntworten = new String[3][5]; //3 Zeilen und 4 Spalten; erste Spalte Frage, zweite Spalte Antwort1 usw.
+    static String[][] fragenUndAntworten = new String[3][5]; //3 Zeilen und 5 Spalten; erste Spalte Frage, zweite Spalte Antwort1 usw.
 
     FragenkatalogIII() {
         fragenUndAntworten[0][0] = "Was ist zu tun, wenn vor Antritt der Fahrt nicht feststeht, wer Schiffsführer ist?";
