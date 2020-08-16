@@ -5,7 +5,9 @@ public class Frage {
     int richtigeAntwort;
     boolean richtigBeantwortet;
 
-    Frage() {
 
-        }
+    Frage() {
+        frage = "Frage1";
+    }
+
 }

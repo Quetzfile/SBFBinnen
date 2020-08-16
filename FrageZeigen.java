@@ -2,12 +2,26 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JDialog;
 
-public class FrageZeigen {
-    //ErstelleFragenArray frage = new ErstelleFragenArray();
+import static java.lang.System.*;
 
-FrageZeigen() {
-    System.out.println(ErstelleFragenArray.fragenSammlung[1].frage);
+public class FrageZeigen {
+
+
+
+    FrageZeigen() {
+
+    out.println(ErstelleFragenArray.fragenSammlung[1].frage);  //funktioniert nicht!
 }
+
+
+
+
+
+
+
+
+
+
 
    /* FrageZeigen() {
         JDialog frage = new JDialog();
