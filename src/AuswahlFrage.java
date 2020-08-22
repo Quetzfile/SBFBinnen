@@ -7,15 +7,15 @@ public class AuswahlFrage {
 
 
 
-   /* private static int aktuelleFrage = 1;
+    /* private static int aktuelleFrage = 1;
 
-    while (ErstelleFragenArray.getRichtigBeantwortet() = false) {
+     while (ErstelleFragenArray.getRichtigBeantwortet() = false) {
 
-    }
-    public static int getAktuelleFrage() {
-        return aktuelleFrage;
-    }
-*/
+     }
+     public static int getAktuelleFrage() {
+         return aktuelleFrage;
+     }
+ */
     public static int getNextFrage() {
         return nextFrage = new Random().nextInt(Fragenkatalog.getAnzahlFragen());
     }
