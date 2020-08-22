@@ -9,13 +9,13 @@ public class Fragenkatalog {
         fragenUndAntworten[0][3] = "Ein Inhaber eines Sportbootführerscheins muss die Fahrzeugführung übernehmen.";
         fragenUndAntworten[0][4] = "Ein Inhaber eines Sportbootführerscheins muss die Verantwortung übernehmen.";
         fragenUndAntworten[1][0] = "In welchen Fällen darf weder ein Sportboot geführt noch dessen Kurs oder Geschwindigkeit selbstständig bestimmt werden?";
-        fragenUndAntworten[1][1] = "Wenn man infolge körperlicher oder geistiger Mängel oder infolge Genusses alkoholischer Getränge oder anderer berauschender Mittel in der sicheren Führung" +
+        fragenUndAntworten[1][1] = "Wenn man infolge körperlicher oder geistiger Mängel oder infolge Genusses alkoholischer Getränke oder anderer berauschender Mittel in der sicheren Führung" +
                 " behindert ist oder wenn eine Blutalkoholkonzentration von 0,5 0/00 oder mehr im Körper vorhanden ist.";
-        fragenUndAntworten[1][2] = "Wenn man infolge körperlicher oder geistiger Mängel oder infolge Genusses alkoholischer Getränge oder anderer berauschender Mittel in der sicheren Führung" +
+        fragenUndAntworten[1][2] = "Wenn man infolge körperlicher oder geistiger Mängel oder infolge Genusses alkoholischer Getränke oder anderer berauschender Mittel in der sicheren Führung" +
                 " behindert ist oder wenn eine Blutalkoholkonzentration von 0,8 0/00 oder mehr im Körper vorhanden ist.";
-        fragenUndAntworten[1][3] = "Wenn man infolge körperlicher oder geistiger Mängel oder infolge Genusses alkoholischer Getränge oder anderer berauschender Mittel in der sicheren Führung" +
+        fragenUndAntworten[1][3] = "Wenn man infolge körperlicher oder geistiger Mängel oder infolge Genusses alkoholischer Getränke oder anderer berauschender Mittel in der sicheren Führung" +
                 " behindert ist oder wenn eine Blutalkoholkonzentration von 1,0 0/00 oder mehr im Körper vorhanden ist.";
-        fragenUndAntworten[1][4] = "Wenn man infolge körperlicher oder geistiger Mängel oder infolge Genusses alkoholischer Getränge oder anderer berauschender Mittel in der sicheren Führung" +
+        fragenUndAntworten[1][4] = "Wenn man infolge körperlicher oder geistiger Mängel oder infolge Genusses alkoholischer Getränke oder anderer berauschender Mittel in der sicheren Führung" +
                 " behindert ist oder wenn eine Blutalkoholkonzentration von 0,3 0/00 oder mehr im Körper vorhanden ist.";
         fragenUndAntworten[2][0] = "Wann ist ein Fahrzeug in Fahrt?";
         fragenUndAntworten[2][1] = "Wenn es weder vor Anker liegt noch an Land festgemacht ist noch auf Grund sitzt.";

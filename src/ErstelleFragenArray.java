@@ -1,13 +1,10 @@
-
-
-
 public class ErstelleFragenArray {
 
-    int aktuelleFrage/* = AuswahlFrage.getNextFrage()*/;
+    //static int aktuelleFrage;
     static Frage[] fragenSammlung = new Frage[Fragenkatalog.getAnzahlFragen()];
 
 
-    //TODO: Methode noch nicht getestet und auch noch nicht angewendet
+    //TODO: Methode noch nicht getestet und auch noch nicht angewendet. Vorerst wird die Variable 'aktuelle Frage' verwendet, um Daten aus einem Frage-Objekt zu ziehen.
     static int findeFrage() {
         int neueFrage;
         do neueFrage = AuswahlFrage.getNextFrage();
@@ -20,13 +17,16 @@ public class ErstelleFragenArray {
     static void frageObjekteInitialisieren() {
         for (int i = 0; i < Fragenkatalog.getAnzahlFragen(); i++) {
             fragenSammlung[i] = new Frage();
+            for (int j = 0; j < 4; j++) {
+                fragenSammlung[i].ant[j] = "moin";
+            }
         }
     }
 
     static void fragenInArray() {
-        fragenSammlung[0].frage = Fragenkatalog.fragenUndAntworten[0][0];
-        fragenSammlung[1].frage = Fragenkatalog.fragenUndAntworten[1][0];
-        fragenSammlung[2].frage = Fragenkatalog.fragenUndAntworten[2][0];
+        for (int i = 0; i < Fragenkatalog.getAnzahlFragen(); i++) {
+            fragenSammlung[i].frage = Fragenkatalog.fragenUndAntworten[i][0];
+        }
     }
 
     static void frageNummerInArray() {
@@ -48,17 +48,25 @@ public class ErstelleFragenArray {
         }
     }
 
+    static void antwortenInFrageObjekte () {
+        for (int i = 0; i < Fragenkatalog.getAnzahlFragen(); i++) {
+            for (int j = 1; j <= 4; j++) {
+                fragenSammlung[i].ant[j-1] = Fragenkatalog.fragenUndAntworten[i][j];
+            }
+        }
+    }
+
     /*public static boolean getRichtigBeantwortet() {
         return fragenSammlung[AuswahlFrage.getAktuelleFrage()].richtigBeantwortet;
     }*/
 
-    static void frageAnzeigen() {
-        ErstelleFragenArray.frageObjekteInitialisieren();
+    static void starteSession() {
+        Fragenkatalog.initFragenkatalog();
+        frageObjekteInitialisieren();
         frageNummerInArray();
         fragenInArray();
         richtigeAntInArray();
         richtigBeantwortetInArray();
-        System.out.print("Frage " + fragenSammlung[AuswahlFrage.getNextFrage()].frageNummer + ": ");
-        System.out.println(fragenSammlung[AuswahlFrage.getNextFrage()].frage);
+        antwortenInFrageObjekte();
     }
 }
