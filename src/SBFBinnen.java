@@ -5,6 +5,6 @@ public class SBFBinnen {
         Abfragen.naechsteFrage();
         Abfragen.antwortenZeigen();
         Abfragen.antworten();
-
+        Abfragen.antwortCheck();
     }
 }
